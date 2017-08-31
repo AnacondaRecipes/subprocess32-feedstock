@@ -31,7 +31,18 @@ test:
 about:
     home: https://github.com/google/python-subprocess32
     license: PSF 2
+    license_family: PSF
     summary: 'A backport of the subprocess module from Python 3.2/3.3 for use on 2.x.'
+    
+    description: |
+      This is a backport of the Python 3 subprocess module for use on Python 2. 
+      This code has not been tested on Windows or other non-POSIX platforms.
+      subprocess32 includes many important reliability bug fixes relevant on POSIX platforms. 
+      The most important of which is a C extension module used internally to handle the code 
+      path between fork() and exec(). This module is reliable when an application is using threads.
+    doc_url: https://docs.python.org/3.3/library/subprocess.html
+    dev_url: https://github.com/google/python-subprocess32
+    doc_source_url: 
 
 extra:
   recipe-maintainers:
